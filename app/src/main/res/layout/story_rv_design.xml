@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/roundedImageView"
+        android:layout_width="130dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_border_color="#333333"
+        app:riv_border_width="2dip"
+        app:riv_corner_radius="10dip"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat" />
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pProfile"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:padding="4dp"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="@id/roundedImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_circle"
+        app:layout_constraintBottom_toBottomOf="@id/pProfile"
+        app:layout_constraintEnd_toEndOf="@id/pProfile"
+        app:layout_constraintStart_toStartOf="@id/pProfile"
+        app:layout_constraintTop_toTopOf="@id/pProfile" />
+
+
+
+
+    <ImageView
+        android:id="@+id/stotyType"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="@id/roundedImageView"
+        app:layout_constraintEnd_toEndOf="@id/roundedImageView"
+        android:src="@drawable/live"
+        android:layout_width="25dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/white"
+        android:text="md saju"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/roundedImageView"
+        app:layout_constraintStart_toStartOf="@id/roundedImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
